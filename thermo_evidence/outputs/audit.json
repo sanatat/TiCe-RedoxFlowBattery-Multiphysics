@@ -1,0 +1,59 @@
+{
+  "status": "evidence-based Ce screening, NOT verified Ti/Ce mixed-acid precipitation thermodynamics",
+  "source_notes": {
+    "patent": "https://patents.google.com/patent/US12119527B2/en",
+    "published_Ce_mixed_acid": "https://doi.org/10.1021/ef200354b",
+    "Ti_speciation": "https://doi.org/10.1039/D1RA04284J",
+    "Ti_thermohydrolysis": "https://doi.org/10.1016/j.jct.2018.11.001",
+    "Ce_background": "Rare Earth Elements Equilibria in Aqueous Media, Table 11.2 (2 M NaClO4 at 25C)"
+  },
+  "ce_sulfate_conditional_log_beta": {
+    "CeIII_SO4": 1.24,
+    "CeIV_SO4": 4.62,
+    "CeIV_2SO4": 8.0,
+    "CeIV_3SO4": 10.38
+  },
+  "worked_example": {
+    "evidence_status": "patent_observational_limits_unverified_temperature",
+    "msa_M": 2,
+    "h2so4_M": 0.5,
+    "ce_total_M": 0.5,
+    "ce4_fraction": 0.5,
+    "ce3_M": 0.25,
+    "ce4_M": 0.25,
+    "temperature_C": null,
+    "ce3": {
+      "status": "below_reported_limit",
+      "reported_limit_M": 0.8,
+      "margin_M": 0.55,
+      "ratio_to_reported_limit": 0.3125,
+      "qualification": null
+    },
+    "ce4": {
+      "status": "above_reported_limit",
+      "reported_limit_M": 0.2,
+      "margin_M": -0.04999999999999999,
+      "ratio_to_reported_limit": 1.25,
+      "qualification": null
+    },
+    "source": "https://patents.google.com/patent/US12119527B2/en",
+    "is_thermodynamic_saturation_index": false,
+    "assessment": "Evidence-based flag at an exactly reported acid mixture; NOT a prediction of a solid phase, precipitation onset, or long-term safety. Temperature and ionic activities not established."
+  },
+  "audit": {
+    "completed": [
+      "Oxidation-state-resolved measured Ce solubility evidence for five exact nominal acid mixtures (patent)",
+      "Ce(III)/Ce(IV) sulfate conditional complexation at 25 C in 2 M NaClO4 (NOT mixed acid)",
+      "Qualitative acid/temperature/SOC stability constraints with published references"
+    ],
+    "missing": [
+      "Reliable Ce(III/IV) and Ti(III/IV) methanesulfonate/sulfate/hydrolysis formation constants in the target mixed-acid ionic medium",
+      "Verified identity and Ksp/chemical potentials of all precipitating solid phases across relevant acidity and oxidation state",
+      "Validated high-ionic-strength activity model (Pitzer/SIT) for mixed MSA/H2SO4/Ti/Ce, temperature dependent",
+      "Temperature-dependent solubility measurements for both oxidation states at controlled SOC",
+      "Precipitation kinetics, induction times, and metastable versus equilibrium boundaries",
+      "Raw experimental acid/free sulfate/pH/temperature data; co-dissolved Ti effects"
+    ],
+    "scientific_verdict": "Partial evidence-based screening only; quantitative Ti/Ce mixed-acid saturation indices remain unvalidated"
+  }
+}

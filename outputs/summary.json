@@ -1,0 +1,212 @@
+{
+  "provenance": "Fu et al. ChemSusChem 2026 DOI 10.1002/cssc.202502732; accompanying SI 41 pages",
+  "scope": "Computational educational study; no new laboratory observations; no electrochemical EIS measurements or precipitation validation.",
+  "parameter_origin": {
+    "cell": "SI pp 2-3",
+    "D_k": "SI Table S6",
+    "viscosity_sigma": "SI S7-S8",
+    "P_Ce": "SI Fig S4",
+    "membrane_ASR": "SI Fig S20",
+    "felt_porosity_tortuosity_active_area": "UNMEASURED scenarios"
+  },
+  "transport_SI_D_m2_s": {
+    "Ce3": 1.2600000000000002e-07,
+    "Ce4": 2.0000000000000002e-07,
+    "Ti4": 2.52e-08,
+    "Ti3": 1.78e-08
+  },
+  "transport_channel_k_m_s": {
+    "Ce3": 0.0002261154235929632,
+    "Ce4": 0.0002829098821630847,
+    "Ti4": 8.475345205491894e-05,
+    "Ti3": 6.781598922537823e-05
+  },
+  "mass_balance_max_abs_relative_error": 5.618637844237672e-15,
+  "porous_felt_independent_FVM_max_error": 0.001668813936481392,
+  "reactor_nominal": {
+    "Re": 8.856682769726248,
+    "pressure_drop_Pa_assumed": 11.039999999999997,
+    "pump_power_two_cells_W_assumed": 1.3381818181818176e-05,
+    "reservoir_turnover_s": 60.0
+  },
+  "CFD_scenarios": [
+    {
+      "baffle_scenario": false,
+      "raw_inlet_flow_lattice": 0.020496661749542937,
+      "scaled_flow_m3_s": 3.333333333333333e-07,
+      "transport_k_m_s": 7.138996737165045e-05,
+      "reacted_mol_s": 1.606274265862135e-05,
+      "mass_balance_error": 5.852771047463343e-16,
+      "baffle_hydraulic_resistance_relative_to_open_channel_ESTIMATE": 1.0
+    },
+    {
+      "baffle_scenario": true,
+      "raw_inlet_flow_lattice": 0.010979477038390615,
+      "scaled_flow_m3_s": 3.3333333333333325e-07,
+      "transport_k_m_s": 7.507369197079402e-05,
+      "reacted_mol_s": 1.6891580693428657e-05,
+      "mass_balance_error": 4.2920536557385654e-16,
+      "baffle_hydraulic_resistance_relative_to_open_channel_ESTIMATE": 1.8668158490495248
+    }
+  ],
+  "CV_from_SI": [
+    {
+      "ion": "Ce",
+      "anodic_peak_slope_mA_sqrt_s_per_sqrtV": 1256.7839562423437,
+      "anodic_peak_intercept_mA": -29.281902775048007,
+      "R2_fit_on_SI_S4_or_S5": 0.9688128519571924,
+      "peak_delta_E_at_10mV_s_V": 0.5979999999999999
+    },
+    {
+      "ion": "Ti",
+      "anodic_peak_slope_mA_sqrt_s_per_sqrtV": 579.090268241022,
+      "anodic_peak_intercept_mA": -14.221151552744477,
+      "R2_fit_on_SI_S4_or_S5": 0.9943711030194289,
+      "peak_delta_E_at_10mV_s_V": 1.178
+    }
+  ],
+  "EIS_assumed_R0_ohm_cm2": 2.296752157180474,
+  "acid_activity_ideal_cell_V": {
+    "0.5": 1.5456174775587534,
+    "1.0": 1.51,
+    "2.0": 1.4743825224412466,
+    "3.0": 1.4535476336990987
+  },
+  "inventory_reported_P_baseline": {
+    "initial_inventory_mol": {
+      "Ce_mol": 0.019999999999999997,
+      "Ti_mol": 0.019999999999999997
+    },
+    "final_inventory_mol": {
+      "Ce_mol": 0.020000000000000007,
+      "Ti_mol": 0.02000000000000008
+    },
+    "pump_power_two_cells_W": 1.3381818181818176e-05
+  },
+  "inventory_high_crossover_stress": {
+    "initial_inventory_mol": {
+      "Ce_mol": 0.019999999999999997,
+      "Ti_mol": 0.019999999999999997
+    },
+    "final_inventory_mol": {
+      "Ce_mol": 0.019999999999999976,
+      "Ti_mol": 0.02000000000000005
+    },
+    "pump_power_two_cells_W": 1.3381818181818176e-05
+  },
+  "inventory_high_crossover_with_ideal_remix": {
+    "initial_inventory_mol": {
+      "Ce_mol": 0.019999999999999997,
+      "Ti_mol": 0.019999999999999997
+    },
+    "final_inventory_mol": {
+      "Ce_mol": 0.020000000000000004,
+      "Ti_mol": 0.02000000000000013
+    },
+    "pump_power_two_cells_W": 1.3381818181818176e-05
+  },
+  "rate_sensitivity": [
+    {
+      "transport_area_multiplier_ASSUMED": 1,
+      "j_mA_cm2": 30,
+      "second_cycle_model_EE_percent": 83.64044125772739,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": 86.02,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 1,
+      "j_mA_cm2": 50,
+      "second_cycle_model_EE_percent": 75.7506641224134,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 1,
+      "j_mA_cm2": 70,
+      "second_cycle_model_EE_percent": 68.16913249138852,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 1,
+      "j_mA_cm2": 90,
+      "second_cycle_model_EE_percent": NaN,
+      "second_cycle_model_CE_percent": NaN,
+      "published_EE_percent_exact_rate_protocol": 64.37,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 2,
+      "j_mA_cm2": 30,
+      "second_cycle_model_EE_percent": 83.56681509326582,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": 86.02,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 2,
+      "j_mA_cm2": 50,
+      "second_cycle_model_EE_percent": 76.07062098994348,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 2,
+      "j_mA_cm2": 70,
+      "second_cycle_model_EE_percent": 68.64659975241423,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 2,
+      "j_mA_cm2": 90,
+      "second_cycle_model_EE_percent": 60.09454544456866,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": 64.37,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 3,
+      "j_mA_cm2": 30,
+      "second_cycle_model_EE_percent": 83.50881429294279,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": 86.02,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 3,
+      "j_mA_cm2": 50,
+      "second_cycle_model_EE_percent": 76.06953025495467,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 3,
+      "j_mA_cm2": 70,
+      "second_cycle_model_EE_percent": 68.70169386539452,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": null,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    },
+    {
+      "transport_area_multiplier_ASSUMED": 3,
+      "j_mA_cm2": 90,
+      "second_cycle_model_EE_percent": 60.34268729182736,
+      "second_cycle_model_CE_percent": 100.0,
+      "published_EE_percent_exact_rate_protocol": 64.37,
+      "note": "Not same initial SOC / preconditioning / reaction area; not validated"
+    }
+  ],
+  "audit": {
+    "fv_mass_error_max": 5.618637844237672e-15,
+    "lbm_coupled_transport_mass_error_max": 5.852771047463343e-16,
+    "porous_felt_FD_verification_error_max": 0.001668813936481392,
+    "known_mismatch": "3x effective film area gives 90 mA/cmc2 performance but parameter unknown; no independent fit or full pore-scale CFD."
+  }
+}

@@ -1,0 +1,15 @@
+j_mA_cm2,V_discharge_approx_V,approx_digitization_uncertainty_V,held_out_for_assessment,source,model_voltage_V,residual_V
+15,1.68,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.640380385171062,-0.03961961482893783
+35,1.58,0.04,True,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.5557101271131744,-0.024289872886825714
+55,1.48,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.47068443274431,-0.009315567255689938
+75,1.38,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.3852357461435145,0.00523574614351463
+95,1.28,0.04,True,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.2992752093745294,0.019275209374529423
+115,1.18,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.2126826430973936,0.03268264309739366
+135,1.09,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.1252898416880577,0.0352898416880576
+155,1.0,0.04,True,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",1.036850993416519,0.036850993416519096
+175,0.92,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.9469861100763951,0.026986110076395065
+195,0.85,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.8550611706051074,0.005061170605107468
+215,0.78,0.04,True,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.7598948112828136,-0.020105188717186473
+235,0.7,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.658862183257365,-0.04113781674263495
+255,0.56,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.5437791266606568,-0.0162208733393433
+275,0.3,0.04,False,"Fu et al 2026 main Fig.6c, blue 0.50M mRFB discharge; visual estimate",0.30103836076005897,0.0010383607600589762

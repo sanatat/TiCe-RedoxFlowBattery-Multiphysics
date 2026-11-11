@@ -1,0 +1,13 @@
+transport_area_multiplier_ASSUMED,j_mA_cm2,second_cycle_model_EE_percent,second_cycle_model_CE_percent,published_EE_percent_exact_rate_protocol,note
+1,30,83.64044125772739,100.0,86.02,Not same initial SOC / preconditioning / reaction area; not validated
+1,50,75.7506641224134,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+1,70,68.16913249138852,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+1,90,nan,nan,64.37,Not same initial SOC / preconditioning / reaction area; not validated
+2,30,83.56681509326582,100.0,86.02,Not same initial SOC / preconditioning / reaction area; not validated
+2,50,76.07062098994348,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+2,70,68.64659975241423,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+2,90,60.09454544456866,100.0,64.37,Not same initial SOC / preconditioning / reaction area; not validated
+3,30,83.50881429294279,100.0,86.02,Not same initial SOC / preconditioning / reaction area; not validated
+3,50,76.06953025495467,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+3,70,68.70169386539452,100.0,,Not same initial SOC / preconditioning / reaction area; not validated
+3,90,60.34268729182736,100.0,64.37,Not same initial SOC / preconditioning / reaction area; not validated

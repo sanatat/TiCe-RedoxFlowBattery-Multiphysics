@@ -1,0 +1,237 @@
+{
+  "citation": {
+    "title": "Shangwan Fu et al., A Green Titanium-Cerium Redox Flow Battery with Long-Term Stability via Efficient Capacity Recovery",
+    "journal": "ChemSusChem",
+    "year": 2026,
+    "doi": "10.1002/cssc.202502732",
+    "SI_filename": "s1(1).pdf",
+    "SI_pages": 41
+  },
+  "cell": {
+    "area_cm2": 9.0,
+    "area_note": "3 cm x 3 cm geometric effective electrode",
+    "reservoir_each_mL": 20.0,
+    "flow_each_mL_min": 20.0,
+    "felt_thickness_mm": 5,
+    "felt_pretreatment_C": 500,
+    "felt_pretreatment_h": 4,
+    "felt_heating_rate_C_min": 5,
+    "felt_atmosphere": "air",
+    "membrane": "N115 perfluorosulfonic acid",
+    "membrane_presoak_MSA_M": 2,
+    "membrane_presoak_h_min": 12,
+    "charge_cutoff_V": 1.8,
+    "charge_max_minutes": 30,
+    "discharge_cutoff_V": 0.8,
+    "preconditioning_cycles": 20,
+    "preconditioning_j_mA_cm2": [
+      10,
+      40
+    ],
+    "source": "SI pp 2-3"
+  },
+  "electrolyte": {
+    "Ce_each_M": 0.5,
+    "Ti_each_M": 0.5,
+    "MSA_M": 2.0,
+    "note": "mRFB each tank contains both Ce and Ti, supported by main article page 5 and SI Fig S10; SI p3 line listing mRFB composition repeats sRFB and is inconsistent",
+    "sRFB": {
+      "positive_Ce_M": 0.5,
+      "negative_Ti_M": 0.5
+    },
+    "source": "Main Article pp 5-6 + SI Figs S10-S13"
+  },
+  "electrochemical": {
+    "E_Ce_vs_SHE_V": 1.61,
+    "E_Ti_vs_SHE_V": 0.1,
+    "E_cell_formal_V": 1.51,
+    "D_mixed_cm2_s": {
+      "Ce4": 0.002,
+      "Ce3": 0.00126,
+      "Ti4": 0.000252,
+      "Ti3": 0.000178
+    },
+    "k_mixed_cm_s": {
+      "Ce4": 0.0025,
+      "Ce3": 0.0021,
+      "Ti4": 0.00102,
+      "Ti3": 0.00081
+    },
+    "D_single_cm2_s": {
+      "Ce4": 0.00299,
+      "Ce3": 0.00218,
+      "Ti4": 0.000166,
+      "Ti3": 0.000463
+    },
+    "k_single_cm_s": {
+      "Ce4": 0.00269,
+      "Ce3": 0.00185,
+      "Ti4": 0.00277,
+      "Ti3": 0.00173
+    },
+    "apparent_D_note": "Calculated using Randles-Sevcik on porous carbon felt with quasi-reversible CV. Values are unusually high for ordinary molecular diffusivity. Retained as author-reported apparent values with uncertainty; do not treat as independently validated bulk diffusion coefficients.",
+    "source": "Main Article p5 and SI Table S6 p34"
+  },
+  "CV_Ce": {
+    "scan_mV_s": [
+      10,
+      9,
+      7,
+      5,
+      3,
+      1
+    ],
+    "Ipa_mA": [
+      102.625,
+      92.601,
+      71.281,
+      53.095,
+      35.18,
+      17.032
+    ],
+    "Epa_V_SHE": [
+      1.932,
+      1.93,
+      1.916,
+      1.874,
+      1.821,
+      1.746
+    ],
+    "Ipc_mA": [
+      -117.761,
+      -108.655,
+      -86.765,
+      -64.95,
+      -42.404,
+      -18.787
+    ],
+    "Epc_V_SHE": [
+      1.334,
+      1.341,
+      1.358,
+      1.388,
+      1.431,
+      1.516
+    ],
+    "source": "SI Table S4 p33"
+  },
+  "CV_Ti": {
+    "scan_mV_s": [
+      10,
+      9,
+      7,
+      5,
+      3,
+      1
+    ],
+    "Ipa_mA": [
+      44.602,
+      40.642,
+      34.301,
+      26.232,
+      15.673,
+      5.498
+    ],
+    "Epa_V_SHE": [
+      0.711,
+      0.699,
+      0.671,
+      0.617,
+      0.552,
+      0.122
+    ],
+    "Ipc_mA": [
+      -43.845,
+      -40.092,
+      -38.734,
+      -35.386,
+      -31.452,
+      -17.702
+    ],
+    "Epc_V_SHE": [
+      -0.467,
+      -0.457,
+      -0.453,
+      -0.396,
+      -0.318,
+      -0.209
+    ],
+    "source": "SI Table S5 p33"
+  },
+  "conductivity_viscosity_vs_temperature": {
+    "temperature_C": [
+      "room",
+      30,
+      35,
+      45,
+      65
+    ],
+    "conductivity_mS_cm": [
+      246.85,
+      247.26,
+      273.51,
+      280.0,
+      363.78
+    ],
+    "viscosity_cP": [
+      2.76,
+      2.92,
+      2.71,
+      2.44,
+      2.12
+    ],
+    "source": "SI Table S7 p35"
+  },
+  "conductivity_viscosity_vs_concentration": {
+    "M_each_metal": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "conductivity_mS_cm": [
+      246.85,
+      170.36,
+      100.28
+    ],
+    "viscosity_cP": [
+      2.76,
+      4.92,
+      8.21
+    ],
+    "source": "SI Table S8 p36"
+  },
+  "membrane": {
+    "membrane_type": "N115",
+    "Hcell_Ce_permeability_cm_s": 4.54e-07,
+    "Hcell_Ti_permeability": "not detected in 120 h H-cell (not mathematically zero)",
+    "Hcell_Ce_receiver_approx_M_120h": 0.04,
+    "membrane_ASR_before_ohm_cm2": 0.0942,
+    "membrane_ASR_after_ohm_cm2": 0.0785,
+    "source": "SI Fig S4 p7 and Fig S20 p21"
+  },
+  "literature_anchor": {
+    "EE_30_mA_cm2_percent": 86.02,
+    "EE_90_mA_cm2_percent": 64.37,
+    "long_run_j_mA_cm2": 50.0,
+    "long_run_cycles": 3721,
+    "long_run_hours": 1886,
+    "long_run_CE_percent": 99.09,
+    "long_run_EE_percent": 72.32,
+    "long_run_VE_percent": 72.99,
+    "anchor_note": "The long-term run means are NOT the short rate test. 50 and 70 rate values are graph-read approximate, not authoritative numerics.",
+    "source": "Main Article pp 1, 7, 9"
+  },
+  "quantum_chemistry": {
+    "program": "Gaussian 16",
+    "method": "B3LYP-D3(BJ)/def2-SVP",
+    "computer": "Octa-core desktop",
+    "source": "SI p4",
+    "note": "No molecular structure files/basis details or Gaussian license provided; only documentation/review, not DFT replication"
+  },
+  "source_cautions": [
+    "SI p3 repeats single-electrolyte wording for the mixed-electrolyte configuration; main article and SI Fig S10 imply both Ti and Ce in both reservoirs.",
+    "H-cell membrane geometry not provided; apparent P may not directly transfer to operating cell.",
+    "No experimentally measured complete EIS data in SI; only membrane area-specific resistance.",
+    "Missing electrode-specific area/flow-field dimensions and raw voltage-time traces; CFD/finite-volume electrochemistry cannot be fully validated."
+  ]
+}

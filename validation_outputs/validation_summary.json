@@ -1,0 +1,61 @@
+{
+  "source": "Fu et al. 2026 ChemSusChem 10.1002/cssc.202502732, main Fig6c visually approximated; SI S6-S8/S20",
+  "scope": "REDUCED ORDER DISCHARGE ONLY; not full mechanistic multi-parameter calibration",
+  "digitization_uncertainty_assumed_V": 0.04,
+  "fit_parameters": {
+    "E_extrapolated_V": 1.7036818811734635,
+    "R_lumped_ohm_cm2": 3.9343927266777285,
+    "j_curvature_mA_cm2": 275.88986607780055
+  },
+  "train_rmse_V": 0.025899450327423478,
+  "heldout_rmse_V": 0.026094759772931967,
+  "endpoint_removal_stress_test": {
+    "parameters_without_275_point": {
+      "E0_V": 1.723747917374295,
+      "R_lumped_ohm_cm2": 4.42618707816417,
+      "j_curvature_mA_cm2": 99999.99999999999
+    },
+    "predicted_voltage_at_275_without_point_V": 0.4804999670368972,
+    "manual_275_voltage_V": 0.3
+  },
+  "bootstrap_90pct": {
+    "E_extrapolated_V": {
+      "p05": 1.669856767798523,
+      "median": 1.7063055482015823,
+      "p95": 1.754768915767074
+    },
+    "R_lumped_ohm_cm2": {
+      "p05": 3.712633255156795,
+      "median": 3.9659289793611814,
+      "p95": 4.244619658037024
+    },
+    "j_curvature_mA_cm2": {
+      "p05": 275.50000000000006,
+      "median": 275.8422518777422,
+      "p95": 279.7665938464078
+    }
+  },
+  "n_approx_figure_points": 14,
+  "n_train": 10,
+  "n_heldout": 4,
+  "j_mA_cm2_visual_curve_endpoint_approx": 275.0,
+  "FVM_assumed_channel_Ti3_k_m_s": 6.781177470841267e-05,
+  "FVM_max_conservation_error_abs": 1.9963175251732852e-14,
+  "single_pass_utilization_fraction_at_0_5M_and_20mL_min": {
+    "30": 0.01679011684372072,
+    "50": 0.027983528072867865,
+    "90": 0.05037035053116216,
+    "150": 0.08395058421860359,
+    "275": 0.15390940440077328
+  },
+  "membrane_resistance_ohm_cm2_S20": 0.0942,
+  "notes": [
+    "Membrane ASR is directly measured (S20); lumped R is NOT separate kinetic/ohmic fit",
+    "Only 0.50 M mRFB Fig6c curve fitted, not 0.75 or 1M; no out-of-study validation",
+    "Fitted j_curvature is NOT demonstrated molecular-diffusion-limited current; removing the visually estimated last point makes this parameter effectively unbounded",
+    "Bootstrap apparently narrow j_curvature interval is artificial because fit is constrained above observed max; do not interpret as uncertainty interval for a physical limiting current",
+    "Porous felt active area not identified; wide families of a_s, k_surface and tortuosity fit a given effective transport",
+    "CV-derived D values are unusually high and likely apparent; use 1x,0.1x,0.01x sensitivity",
+    "Missing raw V-I, hydrodynamic geometry, felt surface/porosity, SOC, electrode EIS; validation pending"
+  ]
+}

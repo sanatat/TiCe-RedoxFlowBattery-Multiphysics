@@ -1,0 +1,21 @@
+{
+  "source": "Fu et al. ChemSusChem 2026 DOI 10.1002/cssc.202502732, SI",
+  "status": "Research prototype; unmeasured scenario parameters, no lab validation",
+  "modules": {
+    "mixed_acid": "Measured 2 M MSA anchor; hypothetical sulfate perturbations and conditional binding.",
+    "reactor": "1D galvanostatic convection/consumption, local Nernst/BV/film/ohmic and Darcy loss; not full porous CFD.",
+    "membrane": "Conservative Fick + linearized effective-charge migration + prescribed water-volume transfer.",
+    "stack": "Electrically series, Darcy hydraulically parallel; manifold resistance spread assumed; no shunt currents.",
+    "lifetime": "Phenomenological reversible imbalance, irreversible felt/inventory fade; not fitted to 3721 cycles."
+  },
+  "reactor_nominal_50mA_cm2": {
+    "cell_voltage_V": 1.2200741279542158,
+    "mean_activation_V": 0.16675612305336643,
+    "mean_concentration_V": 0.0055027428445689345,
+    "mean_ohmic_V": 0.11483760785902374,
+    "pressure_drop_Pa": 1839.9999999999998,
+    "Ce_balance_relative_error": 1.943268735526279e-14,
+    "Ti_balance_relative_error": 1.943268735526279e-14
+  },
+  "lifetime_remix_events_1200": 4
+}

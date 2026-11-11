@@ -1,0 +1,5 @@
+relative_proton_activity_ASSUMED,formal_voltage_V_at_SOC_0p5,note
+0.5,1.5456174775587534,ideal only; MSA analytical acid concentration is NOT proton activity
+1.0,1.51,ideal only; MSA analytical acid concentration is NOT proton activity
+2.0,1.4743825224412466,ideal only; MSA analytical acid concentration is NOT proton activity
+3.0,1.4535476336990987,ideal only; MSA analytical acid concentration is NOT proton activity

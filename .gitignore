@@ -1,0 +1,30 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local datasets, figures from publishers, and private attachments
+s1(1).pdf
+*.pdf
+source_figures/
+*_crop_reference.png
+*_focus.png
+
+# System and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
